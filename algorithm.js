@@ -25,7 +25,7 @@ import { print_ln } from "./module.js";
 
     for (let first=0; first<nums.length; first++) {
       for (let second=first+1; second<nums.length; second++) {
-        if (num[first] + nums[second] == target) {
+        if (nums[first] + nums[second] == target) {
           return [first,second];
         }
       }
@@ -33,3 +33,6 @@ import { print_ln } from "./module.js";
   }
 
 console.log("Input: nums = [2,7,11,15], target = 9 || output:", twoSum([2,7,11,15], 9));
+
+console.log("Input: nums = [3,2,4], target = 6 || output:", twoSum( [3,2,4] , 6));
+
